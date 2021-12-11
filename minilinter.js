@@ -44,3 +44,4 @@ console.log('Sentence Count: ' + sentenceCount);
 // total word count
 
 console.log('Total Words: ' + story.length);
+console.log(betterWords.join(" "))
