@@ -10,6 +10,7 @@ const storyWords = story.split(' ');
 let betterWords = storyWords.filter(word => {
   return !unnecessaryWords.includes(word)
 });
+//console.log(betterWords);
 
 //overused words count
 let reallyCount = 0;
@@ -34,7 +35,7 @@ console.log('"Basically" Count: '+ reallyCount);
 let sentenceCount = 0;
 
 for(word of storyWords) {
-  if(word[word.length-1] === '.'|| word[word.length-1] === '!' || word[word.length-1] === '.?') {
+  if(word[word.length-1] === '.'|| word[word.length-1] === '!' || word[word.length-1] === '?') {
     sentenceCount++;
   }
 }
@@ -43,5 +44,6 @@ console.log('Sentence Count: ' + sentenceCount);
 
 // total word count
 
-console.log('Total Words: ' + story.length);
-console.log(betterWords.join(" "))
+console.log('Total Words: ' + storyWords.length);
+
+console.log(betterWords.join(" "));
